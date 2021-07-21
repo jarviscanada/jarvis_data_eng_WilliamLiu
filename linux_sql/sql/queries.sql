@@ -1,16 +1,4 @@
--- INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp)
--- VALUES (1, 'spry-framework-236416.internal', 1, 'x86_64', 'Intel(R) Xeon(R) CPU @ 2.30GHz', 2300.000, 256, 601324,
---         '2019-05-29 17:49:53');
---
--- INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
--- VALUES ('2019-05-29 16:53:28', 1, 256, 95, 0, 0, 31220);
---
--- INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
--- VALUES ('2019-05-29 15:00:00.000', 1, 300000, 90, 4, 2, 3);
---
--- INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
--- VALUES ('2019-05-29 15:01:00.000', 1, 200000, 90, 4, 2, 3);
-
+-- group hosts by hardware info
 SELECT
     cpu_number,
     id AS "host_id",
@@ -21,6 +9,7 @@ ORDER BY
     cpu_number,
     total_mem DESC;
 
+-- returns timestamps 5 mins apart
 CREATE FUNCTION round5(ts timestamp) RETURNS timestamp AS
 $$
 BEGIN
@@ -29,6 +18,7 @@ END;
 $$
     LANGUAGE PLPGSQL;
 
+-- average memory usage
 SELECT
     host_id,
     hostname AS host_name,
@@ -47,6 +37,7 @@ ORDER BY
     host_id,
     timestamp;
 
+-- detect host failure
 SELECT
     host_id,
     round5(timestamp) AS "ts",

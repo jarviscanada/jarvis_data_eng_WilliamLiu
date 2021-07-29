@@ -20,7 +20,7 @@ public interface RegexExc {
   public boolean matchIp(String ip);
 
   /**
-   * retrun true if line is empty (e.g. empty, white space, tabs, etc..)
+   * return true if line is empty (e.g. empty, white space, tabs, etc..)
    *
    * @param line
    * @return

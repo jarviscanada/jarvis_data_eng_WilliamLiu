@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 
 public class JavaGrepImp implements JavaGrep {
 
-  private final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+  final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
   private String regex;
   private String rootPath;
   private String outFile;

@@ -1,5 +1,5 @@
-package ca.jrvs.practice.dataStructure.stackQueueDeque;
+package ca.jrvs.practice.dataStructure.stackQueue;
 
-public interface JDeque {
+public interface JDeque<E> extends JStack<E>, JQueue<E> {
 
 }

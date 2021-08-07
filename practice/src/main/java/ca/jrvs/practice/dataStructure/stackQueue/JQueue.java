@@ -1,4 +1,4 @@
-package ca.jrvs.practice.dataStructure.stackQueueDeque;
+package ca.jrvs.practice.dataStructure.stackQueue;
 
 import java.util.Collection;
 import java.util.NoSuchElementException;

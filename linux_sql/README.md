@@ -61,7 +61,7 @@ crontab -e
 crontab -l
 ```
 
-# Implemenation
+# Implementation
 
 1. `psql_docker.sh` is used to creating, starting and stopping PostgreSQL docker containers
 2. `ddl.sql` is used to create data tables in the `host_agent` database

@@ -11,6 +11,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
 import org.springframework.http.HttpMethod;
 
 
@@ -23,8 +24,7 @@ public class TwitterHttpHelper implements HttpHelper {
   private HttpClient httpClient;
 
   /**
-   * Constructor
-   * Setup dependencies using secrets
+   * Constructor Setup dependencies using secrets
    *
    * @param consumerKey
    * @param consumerSecret
@@ -41,6 +41,20 @@ public class TwitterHttpHelper implements HttpHelper {
     httpClient = new DefaultHttpClient();
   }
 
+  public static void main(String[] args) throws Exception {
+    String consumerKey = System.getenv("consumerKey");
+    String consumerSecret = System.getenv("consumerSecret");
+    String accessToken = System.getenv("accessToken");
+    String tokenSecret = System.getenv("tokenSecret");
+    System.out.println(consumerKey + "|" + consumerSecret + "|" + accessToken + "|" + tokenSecret);
+    // create components
+    HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken,
+        tokenSecret);
+    HttpResponse response = httpHelper
+        .httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=first_tweet2"));
+    System.out.println(EntityUtils.toString(response.getEntity()));
+  }
+
   /**
    * Execute a HTTP Post call
    *
@@ -55,7 +69,6 @@ public class TwitterHttpHelper implements HttpHelper {
       throw new RuntimeException("Failed to execute", e);
     }
   }
-
 
   /**
    * Execute a HTTP Get call

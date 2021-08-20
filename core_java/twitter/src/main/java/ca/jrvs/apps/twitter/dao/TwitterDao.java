@@ -51,7 +51,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     return new URI(API_BASE_URI + DELETE_PATH + id + ".json");
   }
 
-  private Tweet parseResponseBody(HttpResponse response, Integer expectedStatusCode) {
+  public Tweet parseResponseBody(HttpResponse response, Integer expectedStatusCode) {
     Tweet tweet = null;
 
     // Check response status

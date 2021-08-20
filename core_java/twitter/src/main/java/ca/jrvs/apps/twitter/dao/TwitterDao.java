@@ -33,11 +33,12 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     this.httpHelper = httpHelper;
   }
 
-  private URI getPostURI(Tweet entity) throws URISyntaxException {
+  private URI getPostURI(Tweet tweet) throws URISyntaxException {
     PercentEscaper percentEscaper = new PercentEscaper("", false);
     return new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL + percentEscaper
-        .escape(entity.getText()) + AMPERSAND + "lat" + EQUAL + entity.getCoordinates().get(0)
-        + AMPERSAND + "long" + EQUAL + entity.getCoordinates().get(1));
+        .escape(tweet.getText()) + AMPERSAND + "lat" + EQUAL + tweet.getCoordinates()
+        .getCoordinates().get(1) + AMPERSAND + "long" + EQUAL + tweet.getCoordinates()
+        .getCoordinates().get(0));
   }
 
   private URI getShowURI(String id) throws URISyntaxException {

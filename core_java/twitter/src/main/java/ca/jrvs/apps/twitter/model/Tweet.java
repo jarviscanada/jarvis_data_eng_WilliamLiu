@@ -3,8 +3,6 @@ package ca.jrvs.apps.twitter.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import java.util.Date;
-import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -19,55 +17,54 @@ import java.util.List;
     "favorited",
     "retweeted"
 })
+
 public class Tweet {
 
   @JsonProperty("created_at")
-  private Date createdAt;
+  private String createdAt;
   @JsonProperty("id")
-  private int id;
+  private long id;
   @JsonProperty("id_str")
   private String idStr;
   @JsonProperty("text")
   private String text;
   @JsonProperty("entities")
-  private List<Entities> entities = null;
+  private Entities entities;
   @JsonProperty("coordinates")
-  private List<Coordinates> coordinates = null;
+  private Coordinates coordinates;
   @JsonProperty("retweet_count")
-  private int retweetCount;
+  private long retweetCount;
   @JsonProperty("favorite_count")
-  private int favoriteCount;
+  private long favoriteCount;
   @JsonProperty("favorited")
   private boolean favorited;
   @JsonProperty("retweeted")
   private boolean retweeted;
 
   @JsonProperty("created_at")
-  public Date getCreatedAt() {
+  public String getCreatedAt() {
     return createdAt;
   }
 
   @JsonProperty("created_at")
-  public void setCreatedAt(Date createdAt) {
+  public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
 
   @JsonProperty("id")
-  public int getId() {
+  public long getId() {
     return id;
   }
 
   @JsonProperty("id")
-  public void setId(int id) {
+  public void setId(long id) {
     this.id = id;
   }
 
-  @JsonProperty("id_str")
   public String getIdStr() {
     return idStr;
   }
 
-  @JsonProperty("id_str")
   public void setIdStr(String idStr) {
     this.idStr = idStr;
   }
@@ -83,27 +80,27 @@ public class Tweet {
   }
 
   @JsonProperty("entities")
-  public List<Entities> getEntities() {
+  public Entities getEntities() {
     return entities;
   }
 
   @JsonProperty("entities")
-  public void setEntities(List<Entities> entities) {
+  public void setEntities(Entities entities) {
     this.entities = entities;
   }
 
   @JsonProperty("coordinates")
-  public List<Coordinates> getCoordinates() {
+  public Coordinates getCoordinates() {
     return coordinates;
   }
 
   @JsonProperty("coordinates")
-  public void setCoordinates(List<Coordinates> coordinates) {
+  public void setCoordinates(Coordinates coordinates) {
     this.coordinates = coordinates;
   }
 
   @JsonProperty("retweet_count")
-  public int getRetweetCount() {
+  public long getRetweetCount() {
     return retweetCount;
   }
 
@@ -113,7 +110,7 @@ public class Tweet {
   }
 
   @JsonProperty("favorite_count")
-  public int getFavoriteCount() {
+  public long getFavoriteCount() {
     return favoriteCount;
   }
 
@@ -145,9 +142,9 @@ public class Tweet {
   @Override
   public String toString() {
     return "Tweet{" +
-        "createdAt=" + createdAt +
+        "createdAt='" + createdAt + '\'' +
         ", id=" + id +
-        ", idStr='" + idStr + '\'' +
+        ", intStr='" + idStr + '\'' +
         ", text='" + text + '\'' +
         ", entities=" + entities +
         ", coordinates=" + coordinates +

@@ -61,7 +61,6 @@ public class StackUsingQueue {
   public static class OneQueue {
 
     private Queue<Integer> q1 = new LinkedList<>();
-    private int top;
 
     public OneQueue() {
     }
@@ -72,7 +71,11 @@ public class StackUsingQueue {
      */
     public void push(int x) {
       q1.add(x);
-      top = x;
+      int size = q1.size();
+      while (size > 1){
+        q1.add(q1.remove());
+        size--;
+      }
     }
 
     /**
@@ -80,13 +83,7 @@ public class StackUsingQueue {
      * Justification: pop last item in list in place
      */
     public int pop() {
-      int size = q1.size();
-      while (size > 1) {
-        q1.add(q1.remove());
-        size--;
-      }
-      top = q1.remove();
-      return top;
+      return q1.remove();
     }
 
     /**
@@ -94,7 +91,7 @@ public class StackUsingQueue {
      * Justification: return variable
      */
     public int top() {
-      return top;
+      return q1.peek();
     }
 
     /**

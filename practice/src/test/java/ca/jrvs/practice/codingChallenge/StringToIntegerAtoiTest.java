@@ -27,6 +27,9 @@ public class StringToIntegerAtoiTest {
     String s6 = "91283472332";
     int result6 = stringToIntegerAtoi.myAtoi(s6);
     assertEquals(Integer.MAX_VALUE, result6);
+    String s7 = "2147483646";
+    int result7 = stringToIntegerAtoi.myAtoi(s7);
+    assertEquals(2147483646, result7);
   }
 
   @Test
@@ -50,5 +53,8 @@ public class StringToIntegerAtoiTest {
     String s6 = "91283472332";
     int result6 = stringToIntegerAtoi.myAtoiAscii(s6);
     assertEquals(Integer.MAX_VALUE, result6);
+    String s7 = "2147483646";
+    int result7 = stringToIntegerAtoi.myAtoiAscii(s7);
+    assertEquals(2147483646, result7);
   }
 }

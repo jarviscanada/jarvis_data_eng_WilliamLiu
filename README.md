@@ -1,6 +1,6 @@
 # William Liu . Jarvis Consulting
 
-I am a candidate for Master of Applied Sciences in Systems Design Engineering at the University of Waterloo. I currently hold a degree in Bachelor of Applied Sciences in Electrical and Computer Engineering. I am interested to work with unique and interesting datasets and to discover how leveraging those datasets may impact various lines of service in the financial sector. During my work experience and coursework, I have been involved in various projects, through which I have gained experience in machine learning and deep learning techniques. In addition to my experience in machine learning and deep learning, I am also proficient in software, automation, and manufacturing. I have worked extensively with SQL as back-end to web and mobile applications and I am well versed in several programming languages including but not limited to Python, C#, and Java. I am driven, results-oriented and accustomed to fast-paced work environments. I believe that I still have much to learn, but I am eager to take on new learning opportunities. I am passionate about continuous learning, and I hope to be an asset to your team.
+I am a candidate for Master of Applied Sciences in Systems Design Engineering at the University of Waterloo. I currently hold a degree in Bachelor of Applied Sciences in Electrical and Computer Engineering. I am interested to work with unique and interesting datasets and discover how leveraging those datasets may impact various lines of service in the financial sector. During my work experience and coursework, I have been involved in various projects, through which I have gained experience in machine learning and deep learning techniques. In addition to my experience in machine learning and deep learning, I am also proficient in software, automation, and manufacturing. I have worked extensively with SQL as back-end to web and mobile applications and I am well versed in several programming languages including but not limited to Python, C#, and Java. I am driven, results-oriented, and accustomed to fast-paced work environments. I believe that I still have much to learn, but I am eager to take on new learning opportunities. I am passionate about continuous learning, and I hope to be an asset to your team.
 
 ## Skills
 
@@ -19,7 +19,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_WilliamLiu
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_WilliamLiu/tree/master/core_java)]:
       
-  - Twitter App: In development
+  - Twitter App: Developed an application that uses the Twitter REST API to post, read and delete tweets. The application uses the OAuth 1.0 authentication method and is designed through the MVC architecture, in which business logic and data handling are compartmentalized into separate interactive layers. Maven is used for managing and maintaining the project, which is deployed through a Docker image. JUnit is used for integration and unit testing.
   - JDBC App: Developed an application that allows users' manipulating a PostgreSQL database through Java programming. The application is equipped with the ability to perform CRUD (Create, Read, Update, Delete) operations on Customer and Order data. The Data Access Object (DAO) pattern is implemented to manipulate Data Transfer Objects (DTO).
   - Grep App: Developed an application to facilitate recursive text-searching based on regular expressions. Given a root directory, the application searches through all files and subdirectories for matches to a specific pattern. The application is deployed through a docker image to ensure consistent runtime environments as well as implements core Java file I/O Stream APIs and Lambda functions, managed with Apache Maven.
 
@@ -48,15 +48,15 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_WilliamLiu
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis Consulting Group (2021-present)**: Developed various Java applications in Linux environment using a number of different technologies: Java 8, Docker, Maven, Bash, RDBMS/PostgreSQL, and IntelliJ IDEA. Collaborated with a team of Data Engineers in an Agile/Scrum framework, through daily scrums and biweekly sprints.
+**Data Engineer, Jarvis Consulting Group (2021-present)**: Developed various Java applications in Linux environment using several different technologies: Java 8, Docker, Maven, Bash, RDBMS/PostgreSQL, and IntelliJ IDEA. Collaborated with a team of Data Engineers in an Agile/Scrum framework, through daily scrums and biweekly sprints.
 
 **Software Developer, Elucid Labs Inc. (2018)**: Enhanced image processing pipeline through camera calibration using OpenCV. Employed transfer learning in image segmentation and classification, achieving 95% accuracy. Integrated FLIR industrial vision cameras with Arduino controlled LED lights as well as Qt and Kivy GUI frameworks.
 
-**Powertrain Manufacturing Operations Programmer, Tesla Motors (2018)**: Integrated PLC logic with pneumatic actuators, LabVIEW software, and safety circuit, fixing bottleneck and increasing throughput by 150%. Interfaced LabVIEW software with various electronics testing equipment (power supply, digital multimeter and etc.).
+**Powertrain Manufacturing Operations Programmer, Tesla Motors (2018)**: Integrated PLC logic with pneumatic actuators, LabVIEW software, and safety circuit, fixing bottleneck and increasing throughput by 150%. Interfaced LabVIEW software with various electronics testing equipment (power supply, digital multimeter, etc.).
 
 **Controls Systems Software Designer, ATS Automation Inc. (2017)**: Programmed pick-and-place ladder logic through mapped I/O. Built Windows Forms application in C# to locate and extract fault bits from PLC logic, reducing 30+ hours of manual work to under 10 seconds.
 
-**Software / Controls Developer, Magna Exteriors - Polycon Industries Inc. (2016)**: Designed Android applications to track moulding equipment and material locations on the plant floor, eliminating 20+ hours / week of unnecessary walking time.
+**Software / Controls Developer, Magna Exteriors - Polycon Industries Inc. (2016)**: Designed Android applications to track moulding equipment and material locations on the plant floor, eliminating 20+ hours/week of unnecessary walking time.
 
 **PLC Programmer, BOS Innovations Inc. (2016)**: Integrated various industrial vision systems and sensors into automated production processes. Performed detailed analysis of cycle times for material handling and weld cells, reducing cycle times by 40%.
 

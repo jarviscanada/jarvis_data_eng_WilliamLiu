@@ -1,0 +1,158 @@
+# Preferred name (Characters only)
+name: "William Liu"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_WilliamLiu
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a candidate for Master of Applied Sciences in Systems Design Engineering at the University of Waterloo. I currently hold a degree in Bachelor of Applied Sciences in Electrical and Computer Engineering. I am interested to work with unique and interesting datasets and discover how leveraging those datasets may impact various lines of service in the financial sector. During my work experience and coursework, I have been involved in various projects, through which I have gained experience in machine learning and deep learning techniques. In addition to my experience in machine learning and deep learning, I am also proficient in software, automation, and manufacturing. I have worked extensively with SQL as back-end to web and mobile applications and I am well versed in several programming languages including but not limited to Python, C#, and Java. I am driven, results-oriented, and accustomed to fast-paced work environments. I believe that I still have much to learn, but I am eager to take on new learning opportunities. I am passionate about continuous learning, and I hope to be an asset to your team.
+
+# Group your skills by level.
+# Your skills can be anything software-related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Python
+    - C#
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+    - PyTorch
+    - Keras
+    - TensorFlow
+    - scikit-learn
+    - NumPy
+    - pandas
+  # At least 5 skills
+  competent:
+    - OpenCV
+    - Docker
+    - Maven
+    - MySQL
+    - Tableau/Minitab
+    - C/C++
+    - Matlab
+  # At least 5 skills
+  familiar:
+    - NLTK
+    - JavaScript
+    - AngularJS
+    - jQuery
+    - VHDL
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed a resource management tool that consistently records a system's CPU, memory, and disk I/O consumption data. The Linux Cluster Monitoring Agent (LCMA) can be deployed multiple nodes on a Linux cluster, connected through a network switch. Each node is equipped with a Linux-based operating system: CentOS 7, and shares a PostgreSQL relational database management system (RDBMS) with the other nodes in the cluster. Several bash scripts are constructed to set up the database instance through docker containers as well as collect and update the database with resource usage data over specified one-minute intervals."
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: Developed an application that uses the Twitter REST API to post, read and delete tweets. The application uses the OAuth 1.0 authentication method and is designed through the MVC architecture, in which business logic and data handling are compartmentalized into separate interactive layers. Maven is used for managing and maintaining the project, which is deployed through a Docker image. JUnit is used for integration and unit testing."
+      - "JDBC App: Developed an application that allows users' manipulating a PostgreSQL database through Java programming. The application is equipped with the ability to perform CRUD (Create, Read, Update, Delete) operations on Customer and Order data. The Data Access Object (DAO) pattern is implemented to manipulate Data Transfer Objects (DTO)."
+      - "Grep App: Developed an application to facilitate recursive text-searching based on regular expressions. Given a root directory, the application searches through all files and subdirectories for matches to a specific pattern. The application is deployed through a docker image to ensure consistent runtime environments as well as implements core Java file I/O Stream APIs and Lambda functions, managed with Apache Maven."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_analytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+  #project name
+  - name: "Titanic Ensemble Learning"
+    git_url: https://www.kaggle.com/williamyll/titanic-machine-learning-from-disaster
+    description: "Predicting passenger survival in the Titanic shipwreck using an ensemble learning model."
+  - name: "Petals Transfer Learning"
+    git_url: https://www.kaggle.com/williamyll/petals-transfer-learning
+    description: "Classification of 100 different types of flowers using a transfer learning model."
+  - name: "Pattern Recognition"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Human activity recognition based on smartphone signals using random forest classification. Dataset used: UCI-HAR."
+  - name: "Medical Imaging"
+    description: "Brain tumor segmentation and classification using transfer learning. Dataset used: T1-weighted images of meningioma, glioma and pituitary tumours."
+  - name: "Graphical Deep Learning"
+    description: "Learning kernel-based activation functions from data. Datasets used: CIFAR-10, MNIST."
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software-related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis Consulting Group"
+    duration: "2021-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed various Java applications in Linux environment using several different technologies: Java 8, Docker, Maven, Bash, RDBMS/PostgreSQL, and IntelliJ IDEA. Collaborated with a team of Data Engineers in an Agile/Scrum framework, through daily scrums and biweekly sprints."
+  - title: "Software Developer"
+    company: "Elucid Labs Inc."
+    duration: "2018"
+    description: "Enhanced image processing pipeline through camera calibration using OpenCV. Employed transfer learning in image segmentation and classification, achieving 95% accuracy. Integrated FLIR industrial vision cameras with Arduino controlled LED lights as well as Qt and Kivy GUI frameworks."
+  - title: "Powertrain Manufacturing Operations Programmer"
+    company: "Tesla Motors"
+    duration: "2018"
+    description: "Integrated PLC logic with pneumatic actuators, LabVIEW software, and safety circuit, fixing bottleneck and increasing throughput by 150%. Interfaced LabVIEW software with various electronics testing equipment (power supply, digital multimeter, etc.)."
+  - title: "Controls Systems Software Designer"
+    company: "ATS Automation Inc."
+    duration: "2017"
+    description: "Programmed pick-and-place ladder logic through mapped I/O. Built Windows Forms application in C# to locate and extract fault bits from PLC logic, reducing 30+ hours of manual work to under 10 seconds."
+  - title: "Software / Controls Developer"
+    company: "Magna Exteriors - Polycon Industries Inc."
+    duration: "2016"
+    description: "Designed Android applications to track moulding equipment and material locations on the plant floor, eliminating 20+ hours/week of unnecessary walking time."
+  - title: "PLC Programmer"
+    company: "BOS Innovations Inc."
+    duration: "2016"
+    description: "Integrated various industrial vision systems and sensors into automated production processes. Performed detailed analysis of cycle times for material handling and weld cells, reducing cycle times by 40%."
+  - title: "Information Systems Engineering Specialist"
+    company: "Toyota Motor Manufacturing Canada Inc."
+    duration: "2015"
+    description: "Constructed learning management system from the ground up, including SQL Server back-end and ASP.NET C# front-end."
+  - title: "Junior Programmer"
+    company: "TDA Inc."
+    duration: "2014"
+    description: "Worked within the ASP.NET framework, modernizing and improving legacy controls."
+
+#List of education
+education:
+  - school_name: "University of Waterloo"
+    duration: "2019-present"
+    degree: "Master of Applied Sciences"
+    department: "Systems Design Engineering"
+    awards_achievements:
+  - school_name: "University of Waterloo"
+    duration: "2014-2019"
+    degree: "Bachelor of Applied Sciences"
+    department: "Electrical and Computer Engineering"
+    # optional
+    awards_achievements:
+      - "Cognitive Sciences Minor"
+      - "Psychology Minor"
+      - "University of Waterloo President's Scholarship"
+
+#Optional section
+others:
+  #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Machine Learning A-Z: Hands-On Python & R In Data Science (2018)"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Playing Chess"
+      - "Casual gaming"
